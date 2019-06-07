@@ -1,5 +1,5 @@
 -module(event).
--compile(export_all).
+-export([start/2, start_link/2, cancel/1]).
 -record(state, {server, name="", to_go=[]}).
 
 start(EventName, Delay) ->
